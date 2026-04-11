@@ -4,32 +4,25 @@ import { ExternalLink, Code2, Folder } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce Microservices Platform",
-    description: "Scalable e-commerce backend with microservices architecture, Kafka event streaming, Redis caching, and PostgreSQL.",
-    tech: ["Node.js", "Kafka", "Redis", "PostgreSQL", "Docker"],
-    demo: "https://demo.example.com",
-    github: "https://github.com",
-  },
-  {
-    title: "Real-time Chat Application",
-    description: "Full-stack chat app with WebSocket connections, message persistence in MongoDB, and React frontend.",
-    tech: ["React", "Socket.io", "MongoDB", "Express", "TypeScript"],
-    demo: "https://demo.example.com",
-    github: "https://github.com",
-  },
-  {
-    title: "eBPF Network Monitor",
-    description: "Linux kernel-level network monitoring tool built with eBPF for real-time packet analysis and performance tracing.",
-    tech: ["eBPF", "C", "Go", "Linux", "Grafana"],
+    title: "Learn Pro: AI Student Assistant",
+    description: "Full-stack student assistant using Angular, NestJS and MongoDB for task management and quiz generation through the GEMINI API and Langchain JS. Users can manage schedules via prompt or form-based input.",
+    tech: ["Angular", "NestJS", "MongoDB", "Gemini API", "LangChain JS"],
     demo: "",
-    github: "https://github.com",
+    github: "https://github.com/Saiteja2580/CIP",
   },
   {
-    title: "Task Management Dashboard",
-    description: "Collaborative project management tool with drag-and-drop boards, real-time sync, and role-based access control.",
-    tech: ["React", "TypeScript", "Supabase", "Tailwind CSS"],
-    demo: "https://demo.example.com",
-    github: "https://github.com",
+    title: "Wanderlast – Airbnb Clone",
+    description: "Full-stack web application using the MERN stack (MongoDB, Express.js, React, Node.js), implementing a RESTful API for seamless frontend-backend communication.",
+    tech: ["MongoDB", "Express.js", "React", "Node.js", "REST API"],
+    demo: "",
+    github: "https://github.com/Saiteja2580/Wanderlast",
+  },
+  {
+    title: "Check Details Extraction Web App",
+    description: "Data extraction application with Next.js, leveraging the Gemini API and Genkit to process user-uploaded images with high accuracy. Intuitive interface for editing and copying extracted data.",
+    tech: ["Next.js", "Gemini API", "Genkit", "TypeScript"],
+    demo: "",
+    github: "https://github.com/Saiteja2580/Check",
   },
 ];
 
@@ -38,7 +31,7 @@ const ProjectsSection = () => (
     <div className="container mx-auto">
       <SectionHeading label="Projects" title="Featured Work" />
 
-      <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
         {projects.map((project, i) => (
           <motion.div
             key={project.title}

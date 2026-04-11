@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
-import { Code2, Server, Database, Cpu } from "lucide-react";
+import { Code2, Server, Database, Cloud } from "lucide-react";
 
 const highlights = [
-  { icon: Code2, label: "Frontend", desc: "React, TypeScript, Tailwind" },
-  { icon: Server, label: "Backend", desc: "Node.js, Express, REST/GraphQL" },
-  { icon: Database, label: "Databases", desc: "PostgreSQL, MongoDB, Redis" },
-  { icon: Cpu, label: "Systems", desc: "eBPF, Kafka, System Design" },
+  { icon: Code2, label: "Frontend", desc: "Angular, React, Next.js" },
+  { icon: Server, label: "Backend", desc: "Node.js, Express, NestJS" },
+  { icon: Database, label: "Databases", desc: "MongoDB, MySQL" },
+  { icon: Cloud, label: "Cloud", desc: "AWS, Git, DevTools" },
 ];
 
 const AboutSection = () => (
@@ -22,11 +22,11 @@ const AboutSection = () => (
           transition={{ duration: 0.5 }}
           className="text-muted-foreground text-center text-lg leading-relaxed mb-12"
         >
-          I'm a 4th year Computer Science & Engineering student with deep expertise in
-          full-stack development and distributed systems. I love building performant,
-          scalable applications and exploring low-level systems programming with technologies
-          like eBPF. My toolkit spans from crafting pixel-perfect UIs to designing
-          fault-tolerant backend architectures with message queues and caching layers.
+          I'm a final-year Computer Science & Engineering (AI & ML) student at SCSVMV University
+          with a Minor in AI from IIT Mandi. I have a comprehensive skill set in full-stack
+          development including Angular, Next.js, React, Node.js, and AWS. I'm passionate about
+          building robust web applications and designing intuitive user interfaces that solve
+          real-world problems.
         </motion.p>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

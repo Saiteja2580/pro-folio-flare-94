@@ -1,37 +1,37 @@
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
-import { Code2, Server, Database, Cpu, Wrench, Globe } from "lucide-react";
+import { Code2, Server, Database, Cloud, Wrench, BookOpen } from "lucide-react";
 
 const skillCategories = [
   {
     title: "Languages",
     icon: Code2,
-    skills: ["JavaScript", "TypeScript", "Python", "C/C++", "Go", "SQL"],
+    skills: ["JavaScript", "Python", "Java"],
   },
   {
-    title: "Frontend",
-    icon: Globe,
-    skills: ["React", "Next.js", "Tailwind CSS", "HTML/CSS", "Redux"],
-  },
-  {
-    title: "Backend",
+    title: "Frameworks & Libraries",
     icon: Server,
-    skills: ["Node.js", "Express", "REST APIs", "GraphQL", "gRPC"],
+    skills: ["Angular", "Next.js", "React", "Express.js", "Node.js", "NestJS"],
   },
   {
-    title: "Databases & Caching",
+    title: "Databases",
     icon: Database,
-    skills: ["PostgreSQL", "MongoDB", "Redis", "MySQL"],
+    skills: ["MongoDB", "MySQL"],
   },
   {
-    title: "DevOps & Tools",
+    title: "Cloud Technologies",
+    icon: Cloud,
+    skills: ["Amazon Web Services (AWS)"],
+  },
+  {
+    title: "Developer Tools",
     icon: Wrench,
-    skills: ["Docker", "Kubernetes", "Git", "CI/CD", "Linux", "Nginx"],
+    skills: ["VS Code", "Postman", "Git/GitHub", "Auth0 by Okta", "Figma"],
   },
   {
-    title: "Systems & Architecture",
-    icon: Cpu,
-    skills: ["eBPF", "Kafka", "System Design", "Microservices", "Message Queues"],
+    title: "Academic Coursework",
+    icon: BookOpen,
+    skills: ["Data Structures", "OOPs", "DBMS"],
   },
 ];
 

@@ -4,18 +4,18 @@ import { GraduationCap } from "lucide-react";
 
 const education = [
   {
-    degree: "B.Tech in Computer Science & Engineering",
-    institution: "Your University Name",
-    duration: "2022 – 2026",
-    gpa: "8.5 CGPA",
-    details: "Relevant coursework: Data Structures, Algorithms, Operating Systems, Computer Networks, DBMS, System Design",
+    degree: "B.E – Computer Science and Engineering (AI & ML)",
+    institution: "SCSVMV University",
+    duration: "2022 – 2026 (Expected)",
+    gpa: "9.42 CGPA",
+    details: "Relevant coursework: Data Structures, OOPs, DBMS",
   },
   {
-    degree: "Higher Secondary (XII)",
-    institution: "Your School Name",
-    duration: "2020 – 2022",
-    gpa: "92%",
-    details: "Mathematics, Physics, Chemistry, Computer Science",
+    degree: "Minor in Artificial Intelligence",
+    institution: "IIT Mandi",
+    duration: "Expected 2026",
+    gpa: "",
+    details: "AI specialization program from Indian Institute of Technology, Mandi",
   },
 ];
 
@@ -39,7 +39,7 @@ const EducationSection = () => (
             </div>
             <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-2">
               <h3 className="font-heading font-semibold text-foreground">{edu.degree}</h3>
-              <span className="text-primary text-sm font-medium">{edu.gpa}</span>
+              {edu.gpa && <span className="text-primary text-sm font-medium">{edu.gpa}</span>}
             </div>
             <p className="text-muted-foreground text-sm mb-1">{edu.institution}</p>
             <p className="text-muted-foreground/60 text-xs mb-2">{edu.duration}</p>

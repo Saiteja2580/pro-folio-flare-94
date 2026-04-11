@@ -39,18 +39,6 @@ const HeroSection = () => (
         </a>
       </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.6 }}
-        className="flex items-center justify-center gap-5 mt-10"
-      >
-        {socialLinks.map(({ icon: Icon, href }) => (
-          <a key={href} href={href} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-            <Icon size={20} />
-          </a>
-        ))}
-      </motion.div>
 
       <motion.div
         initial={{ opacity: 0 }}

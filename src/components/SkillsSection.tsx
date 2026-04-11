@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
-import { Code2, Server, Database, Cloud, Wrench, BookOpen } from "lucide-react";
+import { Code2, Server, Database, Cloud, Wrench, BookOpen, Cpu } from "lucide-react";
 
 const skillCategories = [
   {
@@ -14,9 +14,9 @@ const skillCategories = [
     skills: ["Angular", "Next.js", "React", "Express.js", "Node.js", "NestJS"],
   },
   {
-    title: "Databases",
+    title: "Databases & Caching",
     icon: Database,
-    skills: ["MongoDB", "MySQL"],
+    skills: ["MongoDB", "MySQL", "Redis"],
   },
   {
     title: "Cloud Technologies",
@@ -27,6 +27,11 @@ const skillCategories = [
     title: "Developer Tools",
     icon: Wrench,
     skills: ["VS Code", "Postman", "Git/GitHub", "Auth0 by Okta", "Figma"],
+  },
+  {
+    title: "System Design",
+    icon: Cpu,
+    skills: ["Caching", "Rate Limiting", "Message Queues", "Load Balancing", "API Gateways", "Kafka", "Redis"],
   },
   {
     title: "Academic Coursework",

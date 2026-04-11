@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Code2, Link, Mail, ChevronDown } from "lucide-react";
+import socialLinks from "./SocialIcons";
+import { ChevronDown } from "lucide-react";
 
 const HeroSection = () => (
   <section id="home" className="relative min-h-screen flex items-center justify-center section-padding overflow-hidden">
@@ -44,11 +45,7 @@ const HeroSection = () => (
         transition={{ delay: 0.6 }}
         className="flex items-center justify-center gap-5 mt-10"
       >
-        {[
-          { icon: Code2, href: "https://github.com/Saiteja2580" },
-          { icon: Link, href: "https://www.linkedin.com/in/sai-teja-karanam" },
-          { icon: Mail, href: "mailto:saitejassp2580@gmail.com" },
-        ].map(({ icon: Icon, href }) => (
+        {socialLinks.map(({ icon: Icon, href }) => (
           <a key={href} href={href} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
             <Icon size={20} />
           </a>

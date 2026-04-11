@@ -11,12 +11,12 @@ const skillCategories = [
   {
     title: "Frameworks & Libraries",
     icon: Server,
-    skills: ["Angular", "Next.js", "React", "Express.js", "Node.js", "NestJS"],
+    skills: ["Angular", "Next.js", "React", "Express.js", "Node.js", "NestJS", "Spring Boot"],
   },
   {
     title: "Databases & Caching",
     icon: Database,
-    skills: ["MongoDB", "MySQL", "Redis"],
+    skills: ["MongoDB", "MySQL", "Redis", "JPA/Hibernate"],
   },
   {
     title: "Cloud Technologies",

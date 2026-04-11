@@ -33,27 +33,31 @@ const SkillsSection = () => (
     <div className="container mx-auto">
       <SectionHeading label="Skills" title="Tech Stack" />
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+      <div className="max-w-3xl mx-auto space-y-8">
         {skillCategories.map((cat, i) => (
           <motion.div
             key={cat.title}
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 16 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: i * 0.08 }}
-            className="glass-card p-6 hover:border-primary/30 transition-colors"
+            transition={{ duration: 0.4, delay: i * 0.06 }}
           >
-            <h3 className="font-heading font-semibold text-foreground text-sm mb-4">{cat.title}</h3>
-            <div className="flex flex-wrap gap-2">
+            <h3 className="font-heading font-semibold text-primary text-xs tracking-widest uppercase mb-3">
+              {cat.title}
+            </h3>
+            <div className="flex flex-wrap gap-3">
               {cat.skills.map((skill) => (
                 <span
                   key={skill}
-                  className="text-xs px-3 py-1.5 rounded-md bg-secondary text-secondary-foreground font-medium"
+                  className="text-sm px-4 py-2 rounded-lg border border-border bg-card/40 text-foreground font-medium hover:border-primary/40 hover:bg-primary/5 transition-colors cursor-default"
                 >
                   {skill}
                 </span>
               ))}
             </div>
+            {i < skillCategories.length - 1 && (
+              <div className="border-b border-border/30 mt-8" />
+            )}
           </motion.div>
         ))}
       </div>

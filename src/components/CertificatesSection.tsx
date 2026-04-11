@@ -4,28 +4,34 @@ import { Award, ExternalLink } from "lucide-react";
 
 const certificates = [
   {
-    title: "AWS Certified Solutions Architect",
+    title: "JavaScript",
+    issuer: "Udemy",
+    date: "2023",
+    link: "",
+  },
+  {
+    title: "Version Control",
+    issuer: "Coursera",
+    date: "2024",
+    link: "",
+  },
+  {
+    title: "AWS Academy Cloud Foundations",
     issuer: "Amazon Web Services",
     date: "2025",
-    link: "https://credential.example.com",
+    link: "",
   },
   {
-    title: "Meta Front-End Developer Certificate",
-    issuer: "Meta (Coursera)",
+    title: "Java",
+    issuer: "IITB Spoken Tutorial",
     date: "2024",
-    link: "https://credential.example.com",
+    link: "",
   },
   {
-    title: "System Design Fundamentals",
-    issuer: "Educative",
-    date: "2024",
-    link: "https://credential.example.com",
-  },
-  {
-    title: "Docker & Kubernetes Masterclass",
+    title: "Angular",
     issuer: "Udemy",
-    date: "2024",
-    link: "https://credential.example.com",
+    date: "In Progress",
+    link: "",
   },
 ];
 
@@ -36,11 +42,8 @@ const CertificatesSection = () => (
 
       <div className="grid md:grid-cols-2 gap-5 max-w-3xl mx-auto">
         {certificates.map((cert, i) => (
-          <motion.a
+          <motion.div
             key={cert.title}
-            href={cert.link}
-            target="_blank"
-            rel="noreferrer"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -57,8 +60,12 @@ const CertificatesSection = () => (
               <p className="text-muted-foreground text-xs mt-1">{cert.issuer}</p>
               <p className="text-muted-foreground/50 text-xs">{cert.date}</p>
             </div>
-            <ExternalLink className="text-muted-foreground/40 group-hover:text-primary transition-colors shrink-0 mt-1" size={14} />
-          </motion.a>
+            {cert.link && (
+              <a href={cert.link} target="_blank" rel="noreferrer">
+                <ExternalLink className="text-muted-foreground/40 group-hover:text-primary transition-colors shrink-0 mt-1" size={14} />
+              </a>
+            )}
+          </motion.div>
         ))}
       </div>
     </div>

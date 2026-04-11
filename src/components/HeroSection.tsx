@@ -3,7 +3,6 @@ import { Code2, Link, Mail, ChevronDown } from "lucide-react";
 
 const HeroSection = () => (
   <section id="home" className="relative min-h-screen flex items-center justify-center section-padding overflow-hidden">
-    {/* Background glow */}
     <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-primary/5 blur-[120px] pointer-events-none" />
 
     <div className="container mx-auto text-center relative z-10">
@@ -16,11 +15,12 @@ const HeroSection = () => (
           Full Stack Developer
         </p>
         <h1 className="text-5xl md:text-7xl font-heading font-bold text-foreground mb-6 glow-text leading-tight">
-          Hi, I'm <span className="text-primary">Your Name</span>
+          Hi, I'm <span className="text-primary">Sai Teja Karanam</span>
         </h1>
         <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 font-light leading-relaxed">
-          4th year CSE Engineer crafting scalable systems with modern web technologies,
-          distributed systems expertise, and a passion for performance engineering.
+          Final-year CSE student at SCSVMV University with expertise in full-stack development,
+          Angular, Next.js, React, Node.js, and AWS. Building robust web applications
+          and designing intuitive user experiences.
         </p>
       </motion.div>
 
@@ -45,9 +45,9 @@ const HeroSection = () => (
         className="flex items-center justify-center gap-5 mt-10"
       >
         {[
-          { icon: Code2, href: "https://github.com" },
-          { icon: Link, href: "https://linkedin.com" },
-          { icon: Mail, href: "mailto:you@email.com" },
+          { icon: Code2, href: "https://github.com/Saiteja2580" },
+          { icon: Link, href: "https://www.linkedin.com/in/sai-teja-karanam" },
+          { icon: Mail, href: "mailto:saitejassp2580@gmail.com" },
         ].map(({ icon: Icon, href }) => (
           <a key={href} href={href} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
             <Icon size={20} />

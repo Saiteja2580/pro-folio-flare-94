@@ -22,11 +22,14 @@ const AboutSection = () => (
           transition={{ duration: 0.5 }}
           className="text-muted-foreground text-center text-lg leading-relaxed mb-12"
         >
-          I'm a final-year Computer Science & Engineering (AI & ML) student at SCSVMV University
-          with a Minor in AI from IIT Mandi. I have a comprehensive skill set in full-stack
-          development including Angular, Next.js, React, Node.js, and AWS. I'm passionate about
-          building robust web applications and designing intuitive user interfaces that solve
-          real-world problems.
+          I'm a 4th year Computer Science & Engineering student with a deep passion for full-stack
+          web development. While my core focus lies in building scalable web applications, I also
+          nurture a growing interest in Machine Learning and Generative AI. What drives me most is
+          the thrill of exploring new technologies, experimenting with cutting-edge APIs, and
+          architecting systems that can scale. I thrive on challenges—when a project demands learning
+          a new tech stack, I dive in with genuine curiosity and excitement. Adaptable to modern
+          development workflows and always hungry to learn, I constantly push myself to stay ahead
+          of the curve in this ever-evolving tech landscape.
         </motion.p>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">

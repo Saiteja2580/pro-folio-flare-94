@@ -21,7 +21,7 @@ const skillCategories = [
   {
     title: "Cloud Technologies",
     icon: Cloud,
-    skills: ["Amazon Web Services (AWS)"],
+    skills: ["Amazon Web Services (AWS)", "Microsoft Azure"],
   },
   {
     title: "Developer Tools",

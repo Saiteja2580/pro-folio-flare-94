@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, ChevronDown } from "lucide-react";
+import { Code2, Link, Mail, ChevronDown } from "lucide-react";
 
 const HeroSection = () => (
   <section id="home" className="relative min-h-screen flex items-center justify-center section-padding overflow-hidden">
@@ -45,8 +45,8 @@ const HeroSection = () => (
         className="flex items-center justify-center gap-5 mt-10"
       >
         {[
-          { icon: Github, href: "https://github.com" },
-          { icon: Linkedin, href: "https://linkedin.com" },
+          { icon: Code2, href: "https://github.com" },
+          { icon: Link, href: "https://linkedin.com" },
           { icon: Mail, href: "mailto:you@email.com" },
         ].map(({ icon: Icon, href }) => (
           <a key={href} href={href} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors">

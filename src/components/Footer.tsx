@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Code2, Link, Mail } from "lucide-react";
 
 const Footer = () => (
   <footer id="contact" className="border-t border-border py-12 px-6">
@@ -6,8 +6,8 @@ const Footer = () => (
       <p className="text-muted-foreground text-sm mb-4">Let's connect and build something great together.</p>
       <div className="flex items-center justify-center gap-5 mb-6">
         {[
-          { icon: Github, href: "https://github.com" },
-          { icon: Linkedin, href: "https://linkedin.com" },
+          { icon: Code2, href: "https://github.com" },
+          { icon: Link, href: "https://linkedin.com" },
           { icon: Mail, href: "mailto:you@email.com" },
         ].map(({ icon: Icon, href }) => (
           <a key={href} href={href} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors">

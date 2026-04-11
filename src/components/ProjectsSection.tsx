@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
-import { ExternalLink, Github, Folder } from "lucide-react";
+import { ExternalLink, Code2, Folder } from "lucide-react";
 
 const projects = [
   {
@@ -53,7 +53,7 @@ const ProjectsSection = () => (
               <div className="flex items-center gap-3">
                 {project.github && (
                   <a href={project.github} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                    <Github size={18} />
+                    <Code2 size={18} />
                   </a>
                 )}
                 {project.demo && (

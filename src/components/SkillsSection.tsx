@@ -31,7 +31,7 @@ const skillCategories = [
   {
     title: "System Design",
     icon: Cpu,
-    skills: ["Caching", "Rate Limiting", "Message Queues", "Load Balancing", "API Gateways", "Kafka", "Redis"],
+    skills: ["Microservices", "Caching", "Rate Limiting", "Message Queues", "Load Balancing", "API Gateways", "Kafka", "Redis"],
   },
   {
     title: "Academic Coursework",

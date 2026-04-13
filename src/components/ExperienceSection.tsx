@@ -4,13 +4,26 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    role: "Intern",
+    role: "Software Development Intern",
     company: "eMudhra Ltd",
     duration: "Ongoing",
     points: [
-      "Drove front-end architecture and UI/UX design for a unified university portal",
-      "Designed wireframes and a hierarchical structure for over 50 screens and features",
-      "Gained practical experience with Amazon Web Services (AWS) cloud technologies",
+      // "Engineered robust backend solutions using Spring Boot, focusing on bug resolution and system optimization.",
+      "Developed core product functionalities utilizing eBPF, Kafka, and Microservices architecture.",
+      "Integrated secure eSignature APIs to implement electronic signing features for a University LMS platform.",
+      "Acquired fundamental knowledge of AWS cloud technologies through professional training and exploration.",
+      "Designed high-fidelity UI/UX wireframes and hierarchical screen structures using Figma.",
+    ],
+  },
+  {
+    role: "Freelance Full Stack Developer",
+    company: "Student LMS Project (Startup)",
+    duration: "Recent",
+    points: [
+      "Architected and developed a modular Student Learning Management System (LMS) backend using NestJS.",
+      "Engineered features for multimedia content (Audio/Video), attendance tracking, and comprehensive analytics.",
+      "Integrated AI-driven modules to automate educational workflows and enhance learning experiences.",
+      "Ensured scalable and maintainable code architecture for a growing startup environment.",
     ],
   },
 ];

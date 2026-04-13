@@ -33,7 +33,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between h-16">
         <a href="#home" className="font-heading font-bold text-xl text-foreground">
-          <span className="text-primary">&lt;</span>Portfolio<span className="text-primary">/&gt;</span>
+          <span className="text-primary"></span>Sai Teja Karanam<span className="text-primary"></span>
         </a>
 
         {/* Desktop */}

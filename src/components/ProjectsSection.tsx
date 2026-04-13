@@ -1,21 +1,29 @@
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
-import { ExternalLink, Code2, Folder } from "lucide-react";
+import { ExternalLink, Folder } from "lucide-react";
+import { GitHubIcon } from "./SocialIcons";
 
 const projects = [
+  {
+    title: "Interactive PDF Digital Signer",
+    description: "A comprehensive document signing platform where users can upload PDFs, interactively place signature boxes via drag-and-drop, and execute secure digital signings with multiple signature types.",
+    tech: ["Angular", "Spring Boot", "iText PDF", "JPA"],
+    demo: "",
+    github: "https://github.com/Saiteja2580/SignerApp",
+  },
   {
     title: "Learn Pro: AI Student Assistant",
     description: "Full-stack student assistant using Angular, NestJS and MongoDB for task management and quiz generation through the GEMINI API and Langchain JS. Users can manage schedules via prompt or form-based input.",
     tech: ["Angular", "NestJS", "MongoDB", "Gemini API", "LangChain JS"],
     demo: "",
-    github: "https://github.com/Saiteja2580/CIP",
+    github: "https://github.com/Saiteja2580/Ai-Student-CIP",
   },
   {
     title: "Wanderlast – Airbnb Clone",
     description: "Full-stack web application using the MERN stack (MongoDB, Express.js, React, Node.js), implementing a RESTful API for seamless frontend-backend communication.",
     tech: ["MongoDB", "Express.js", "React", "Node.js", "REST API"],
     demo: "",
-    github: "https://github.com/Saiteja2580/Wanderlast",
+    github: "https://github.com/Saiteja2580/Wanderlast-Project",
   },
   {
     title: "Check Details Extraction Web App",
@@ -46,7 +54,7 @@ const ProjectsSection = () => (
               <div className="flex items-center gap-3">
                 {project.github && (
                   <a href={project.github} target="_blank" rel="noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                    <Code2 size={18} />
+                    <GitHubIcon size={18} />
                   </a>
                 )}
                 {project.demo && (

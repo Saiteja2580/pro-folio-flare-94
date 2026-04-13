@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import socialLinks from "./SocialIcons";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Download } from "lucide-react";
 
 const HeroSection = () => (
   <section id="home" className="relative min-h-screen flex items-center justify-center section-padding overflow-hidden">
@@ -29,10 +29,20 @@ const HeroSection = () => (
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.3 }}
-        className="flex items-center justify-center gap-4"
+        className="flex flex-wrap items-center justify-center gap-4"
       >
         <a href="#projects" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-heading font-semibold text-sm hover:opacity-90 transition-opacity">
           View Projects
+        </a>
+        <a 
+          href="/certificates/SaiTeja_Karanam_Resume.pdf" 
+          download 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-6 py-3 rounded-lg font-heading font-semibold text-sm hover:opacity-90 transition-opacity"
+        >
+          <Download size={18} />
+          Download Resume
         </a>
         <a href="#contact" className="inline-flex items-center gap-2 border border-border text-foreground px-6 py-3 rounded-lg font-heading font-semibold text-sm hover:border-primary/50 transition-colors">
           Get in Touch

@@ -10,6 +10,7 @@ const links = [
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Certificates", href: "#certificates" },
+  { label: "Resume", href: "/certificates/SaiTeja_Karanam_Resume.pdf" },
 ];
 
 const Navbar = () => {
@@ -42,6 +43,9 @@ const Navbar = () => {
             <a
               key={l.href}
               href={l.href}
+              target={l.label === "Resume" ? "_blank" : undefined}
+              rel={l.label === "Resume" ? "noopener noreferrer" : undefined}
+              download={l.label === "Resume"}
               className="text-sm text-muted-foreground hover:text-primary transition-colors font-medium"
             >
               {l.label}
@@ -72,6 +76,9 @@ const Navbar = () => {
                 <a
                   key={l.href}
                   href={l.href}
+                  target={l.label === "Resume" ? "_blank" : undefined}
+                  rel={l.label === "Resume" ? "noopener noreferrer" : undefined}
+                  download={l.label === "Resume"}
                   onClick={() => setMobileOpen(false)}
                   className="text-sm text-muted-foreground hover:text-primary transition-colors font-medium"
                 >

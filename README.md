@@ -1,3 +1,3 @@
-# Welcome to your Lovable project
+# Sai Teja Karanam - Portfolio
 
-TODO: Document your project here
+Full-stack developer portfolio project for Sai Teja Karanam.
